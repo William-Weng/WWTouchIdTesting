@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         				= "WWTouchIdTesting"
-  s.version      				= "0.1.0"
+  s.version      				= "0.2.0"
   s.summary      				= "WWTouchIdTesting is TouchID / FaceID package. (使用TouchID / FaceID的封裝)"
   s.homepage     				= "https://github.com/William-Weng/WWTouchIdTesting"
   s.license      				= { :type => "MIT", :file => "LICENSE" }
