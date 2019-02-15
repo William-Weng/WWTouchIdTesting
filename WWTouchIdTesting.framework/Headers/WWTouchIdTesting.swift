@@ -13,9 +13,7 @@ import LocalAuthentication
 
 /// MARK: - 功能
 open class WWTouchIdTesting {
-    
-    private let myLocalizedReasonString = "ID辨識測試"
-    
+
     /// 物理檢測的類型
     public enum BiometryType : Int {
         case none
