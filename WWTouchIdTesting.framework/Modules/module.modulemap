@@ -1,0 +1,11 @@
+framework module WWTouchIdTesting {
+  umbrella header "WWTouchIdTesting.h"
+
+  export *
+  module * { export * }
+}
+
+module WWTouchIdTesting.Swift {
+    header "WWTouchIdTesting-Swift.h"
+    requires objc
+}
