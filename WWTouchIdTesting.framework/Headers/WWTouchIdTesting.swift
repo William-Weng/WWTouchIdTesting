@@ -51,7 +51,7 @@ open class WWTouchIdTesting {
         
         let myContext = LAContext()
         
-        myContext.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { (isOK, error) in
+        myContext.evaluatePolicy(.deviceOwnerAuthentication, localizedReason: reason) { (isOK, error) in
             if isOK {
                 result(.success(isOK))
             } else {
@@ -74,7 +74,7 @@ extension WWTouchIdTesting {
         let myContext = LAContext()
         var authError: NSError?
         
-        if myContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &authError) {
+        if myContext.canEvaluatePolicy(.deviceOwnerAuthentication, error: &authError) {
             
             var myBiometryType = BiometryType.none
             
